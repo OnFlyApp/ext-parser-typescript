@@ -1,0 +1,32 @@
+[
+  {
+    "file_path": "src/default.ts",
+    "type": "class",
+    "content": "export default class",
+    "metadata": {
+      "default": "true",
+      "end_line": "1",
+      "exported": "true",
+      "fqn": "default",
+      "name": "default",
+      "namespace": "",
+      "start_line": "1"
+    }
+  },
+  {
+    "file_path": "src/default.ts",
+    "type": "function",
+    "content": "export default function () {}",
+    "metadata": {
+      "default": "true",
+      "end_line": "2",
+      "exported": "true",
+      "fqn": "default",
+      "name": "default",
+      "namespace": "",
+      "params": "()",
+      "signature": "export default function ()",
+      "start_line": "2"
+    }
+  }
+]
