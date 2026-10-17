@@ -1,0 +1,523 @@
+[
+  {
+    "file_path": "src/all.ts",
+    "type": "import",
+    "content": "import { a, b as c } from \"x\";",
+    "metadata": {
+      "end_line": "1",
+      "name": "x",
+      "namespace": "",
+      "start_line": "1"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "import",
+    "content": "import D from \"y\";",
+    "metadata": {
+      "end_line": "2",
+      "name": "y",
+      "namespace": "",
+      "start_line": "2"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "export",
+    "content": "export * from \"z\";",
+    "metadata": {
+      "end_line": "3",
+      "exported": "true",
+      "name": "z",
+      "namespace": "",
+      "start_line": "3"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "interface",
+    "content": "/** Doc for I. */\nexport interface I\u003cT\u003e extends J { a: number; m(x: T): void }",
+    "metadata": {
+      "end_line": "5",
+      "exported": "true",
+      "extends": "J",
+      "fqn": "I",
+      "name": "I",
+      "namespace": "",
+      "start_line": "4",
+      "type_params": "\u003cT\u003e"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "type",
+    "content": "export type U = string | number;",
+    "metadata": {
+      "end_line": "6",
+      "exported": "true",
+      "fqn": "U",
+      "name": "U",
+      "namespace": "",
+      "start_line": "6"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "enum",
+    "content": "export enum E { A = 1, B }",
+    "metadata": {
+      "end_line": "7",
+      "exported": "true",
+      "fqn": "E",
+      "name": "E",
+      "namespace": "",
+      "start_line": "7"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "namespace",
+    "content": "declare module \"m\"",
+    "metadata": {
+      "end_line": "8",
+      "fqn": "m",
+      "modifiers": "declare",
+      "name": "m",
+      "namespace": "",
+      "start_line": "8"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "function",
+    "content": "export function f(): void",
+    "metadata": {
+      "bodyless": "true",
+      "end_line": "8",
+      "exported": "true",
+      "fqn": "m.f",
+      "name": "f",
+      "namespace": "m",
+      "params": "()",
+      "return_type": "void",
+      "signature": "export function f(): void",
+      "start_line": "8"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "namespace",
+    "content": "namespace N.M",
+    "metadata": {
+      "end_line": "9",
+      "fqn": "N.M",
+      "name": "N.M",
+      "namespace": "",
+      "start_line": "9"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "constant",
+    "content": "export const k = 1",
+    "metadata": {
+      "end_line": "9",
+      "exported": "true",
+      "fqn": "N.M.k",
+      "kind": "const",
+      "name": "k",
+      "namespace": "N.M",
+      "start_line": "9"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "class",
+    "content": "@Component({ selector: \"x\" })\nexport class Foo\u003cT\u003e extends Bar implements I",
+    "metadata": {
+      "decorators": "@Component({ selector: \"x\" })",
+      "end_line": "11",
+      "exported": "true",
+      "extends": "Bar",
+      "fqn": "Foo",
+      "implements": "I",
+      "name": "Foo",
+      "namespace": "",
+      "start_line": "10",
+      "type_params": "\u003cT\u003e"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "property",
+    "content": "@Input() private x: number = 1",
+    "metadata": {
+      "decorators": "@Input()",
+      "end_line": "12",
+      "fqn": "Foo.x",
+      "name": "x",
+      "namespace": "",
+      "receiver": "Foo",
+      "start_line": "12",
+      "type": "number",
+      "visibility": "private"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "property",
+    "content": "static readonly y = 2",
+    "metadata": {
+      "end_line": "13",
+      "fqn": "Foo.y",
+      "modifiers": "static readonly",
+      "name": "y",
+      "namespace": "",
+      "receiver": "Foo",
+      "start_line": "13"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "property",
+    "content": "#z = 3",
+    "metadata": {
+      "end_line": "14",
+      "fqn": "Foo.#z",
+      "name": "#z",
+      "namespace": "",
+      "receiver": "Foo",
+      "start_line": "14",
+      "visibility": "private"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "method",
+    "content": "handle = (e: Event) =\u003e { this.x++; }",
+    "metadata": {
+      "end_line": "15",
+      "fqn": "Foo.handle",
+      "name": "handle",
+      "namespace": "",
+      "params": "(e: Event)",
+      "receiver": "Foo",
+      "signature": "handle = (e: Event) =\u003e",
+      "start_line": "15"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "method",
+    "content": "constructor(private a: string) { super(); }",
+    "metadata": {
+      "end_line": "16",
+      "fqn": "Foo.constructor",
+      "name": "constructor",
+      "namespace": "",
+      "params": "(private a: string)",
+      "receiver": "Foo",
+      "signature": "constructor(private a: string)",
+      "start_line": "16"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "method",
+    "content": "/** Value. */\n  async get v(): Promise\u003cnumber\u003e { return 1 }",
+    "metadata": {
+      "end_line": "18",
+      "fqn": "Foo.v",
+      "modifiers": "async get",
+      "name": "v",
+      "namespace": "",
+      "params": "()",
+      "receiver": "Foo",
+      "return_type": "Promise\u003cnumber\u003e",
+      "signature": "async get v(): Promise\u003cnumber\u003e",
+      "start_line": "17"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "method",
+    "content": "m\u003cT\u003e(a: T): T { return a }",
+    "metadata": {
+      "end_line": "19",
+      "fqn": "Foo.m",
+      "name": "m",
+      "namespace": "",
+      "params": "(a: T)",
+      "receiver": "Foo",
+      "return_type": "T",
+      "signature": "m\u003cT\u003e(a: T): T",
+      "start_line": "19",
+      "type_params": "\u003cT\u003e"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "method",
+    "content": "static async *it() {}",
+    "metadata": {
+      "end_line": "20",
+      "fqn": "Foo.it",
+      "modifiers": "static generator async",
+      "name": "it",
+      "namespace": "",
+      "params": "()",
+      "receiver": "Foo",
+      "signature": "static async *it()",
+      "start_line": "20"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "property",
+    "content": "[key: string]: any",
+    "metadata": {
+      "end_line": "21",
+      "fqn": "Foo.[index]",
+      "name": "[index]",
+      "namespace": "",
+      "receiver": "Foo",
+      "start_line": "21"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "static_block",
+    "content": "static { init(); }",
+    "metadata": {
+      "end_line": "22",
+      "fqn": "Foo.static",
+      "name": "static",
+      "namespace": "",
+      "receiver": "Foo",
+      "start_line": "22"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "function",
+    "content": "export const f = async (a: number): Promise\u003cvoid\u003e =\u003e {};",
+    "metadata": {
+      "end_line": "24",
+      "exported": "true",
+      "fqn": "f",
+      "kind": "const",
+      "modifiers": "async",
+      "name": "f",
+      "namespace": "",
+      "params": "(a: number)",
+      "return_type": "Promise\u003cvoid\u003e",
+      "signature": "export const f = async (a: number): Promise\u003cvoid\u003e =\u003e",
+      "start_line": "24"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "function",
+    "content": "const g = function () {};",
+    "metadata": {
+      "end_line": "25",
+      "fqn": "g",
+      "kind": "const",
+      "name": "g",
+      "namespace": "",
+      "params": "()",
+      "signature": "const g = function ()",
+      "start_line": "25"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "function",
+    "content": "export function h(a: number): number;",
+    "metadata": {
+      "bodyless": "true",
+      "end_line": "26",
+      "exported": "true",
+      "fqn": "h",
+      "name": "h",
+      "namespace": "",
+      "params": "(a: number)",
+      "return_type": "number",
+      "signature": "export function h(a: number): number;",
+      "start_line": "26"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "function",
+    "content": "export function h(a: any) { return a }",
+    "metadata": {
+      "end_line": "27",
+      "exported": "true",
+      "fqn": "h",
+      "name": "h",
+      "namespace": "",
+      "params": "(a: any)",
+      "signature": "export function h(a: any)",
+      "start_line": "27"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "variable",
+    "content": "x = 1",
+    "metadata": {
+      "end_line": "28",
+      "fqn": "x",
+      "kind": "let",
+      "name": "x",
+      "namespace": "",
+      "start_line": "28"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "variable",
+    "content": "y = 2",
+    "metadata": {
+      "end_line": "28",
+      "fqn": "y",
+      "kind": "let",
+      "name": "y",
+      "namespace": "",
+      "start_line": "28"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "class",
+    "content": "export abstract class Ab",
+    "metadata": {
+      "end_line": "29",
+      "exported": "true",
+      "fqn": "Ab",
+      "modifiers": "abstract",
+      "name": "Ab",
+      "namespace": "",
+      "start_line": "29"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "method",
+    "content": "abstract z(): void",
+    "metadata": {
+      "bodyless": "true",
+      "end_line": "29",
+      "fqn": "Ab.z",
+      "modifiers": "abstract",
+      "name": "z",
+      "namespace": "",
+      "params": "()",
+      "receiver": "Ab",
+      "return_type": "void",
+      "signature": "abstract z(): void",
+      "start_line": "29"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "function",
+    "content": "declare function dd(): void;",
+    "metadata": {
+      "bodyless": "true",
+      "end_line": "30",
+      "fqn": "dd",
+      "modifiers": "declare",
+      "name": "dd",
+      "namespace": "",
+      "params": "()",
+      "return_type": "void",
+      "signature": "declare function dd(): void;",
+      "start_line": "30"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "namespace",
+    "content": "declare global",
+    "metadata": {
+      "end_line": "31",
+      "fqn": "global",
+      "name": "global",
+      "namespace": "",
+      "start_line": "31"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "interface",
+    "content": "interface Window { a: 1 }",
+    "metadata": {
+      "end_line": "31",
+      "fqn": "global.Window",
+      "name": "Window",
+      "namespace": "global",
+      "start_line": "31"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "export",
+    "content": "export { a, b as c };",
+    "metadata": {
+      "end_line": "32",
+      "exported": "true",
+      "name": "exports",
+      "namespace": "",
+      "start_line": "32"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "export",
+    "content": "export { d } from \"./d\";",
+    "metadata": {
+      "end_line": "33",
+      "exported": "true",
+      "name": "./d",
+      "namespace": "",
+      "start_line": "33"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "import",
+    "content": "import fs = require(\"fs\");",
+    "metadata": {
+      "end_line": "34",
+      "name": "fs = require(\"fs\")",
+      "namespace": "",
+      "start_line": "34"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "enum",
+    "content": "const enum CE { A }",
+    "metadata": {
+      "end_line": "35",
+      "fqn": "CE",
+      "modifiers": "const",
+      "name": "CE",
+      "namespace": "",
+      "start_line": "35"
+    }
+  },
+  {
+    "file_path": "src/all.ts",
+    "type": "statement",
+    "content": "console.log(x);",
+    "metadata": {
+      "end_line": "36",
+      "name": "statements",
+      "namespace": "",
+      "start_line": "36"
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "file_path": "src/component.tsx",
+    "type": "import",
+    "content": "import React from \"react\";",
+    "metadata": {
+      "end_line": "1",
+      "name": "react",
+      "namespace": "",
+      "start_line": "1"
+    }
+  },
+  {
+    "file_path": "src/component.tsx",
+    "type": "function",
+    "content": "/** Greets. */\nexport default function Hello({ name }: { name: string }) {\n  return \u003cdiv\u003e{name}\u003c/div\u003e;\n}",
+    "metadata": {
+      "default": "true",
+      "end_line": "5",
+      "exported": "true",
+      "fqn": "Hello",
+      "name": "Hello",
+      "namespace": "",
+      "params": "({ name }: { name: string })",
+      "signature": "export default function Hello({ name }: { name: string })",
+      "start_line": "2"
+    }
+  },
+  {
+    "file_path": "src/component.tsx",
+    "type": "function",
+    "content": "export const Arrow = \u003cT,\u003e(p: T) =\u003e \u003cspan\u003e{String(p)}\u003c/span\u003e;",
+    "metadata": {
+      "end_line": "6",
+      "exported": "true",
+      "fqn": "Arrow",
+      "kind": "const",
+      "name": "Arrow",
+      "namespace": "",
+      "params": "(p: T)",
+      "signature": "export const Arrow = \u003cT,\u003e(p: T) =\u003e",
+      "start_line": "6",
+      "type_params": "\u003cT,\u003e"
+    }
+  }
+]
