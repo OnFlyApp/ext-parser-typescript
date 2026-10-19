@@ -44,6 +44,10 @@ func main() {
 	if len(os.Args) < 2 {
 		fatalError(fmt.Errorf("missing file path argument"))
 	}
+	if os.Args[1] == "--batch" {
+		runBatch()
+		return
+	}
 	filePath := os.Args[1]
 	src, err := io.ReadAll(os.Stdin)
 	if err != nil {
